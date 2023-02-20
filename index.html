@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {font-family: monospace;
+        background-color: darkseagreen;
+        justify-content: center;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <form name="forma1" action="#">
+        <div>Введите длину прямоугольного треугольника
+            <input type="number" name="t1" size="15">
+        </div>
+        <div>Введите ширину прямоугольного треугольника
+            <input type="number" name="t2" size="15">
+        </div>
+        <div>
+            <input type="button" name="button" value="Вычислить" onClick="areaRectangle()">
+        </div>
+        <div>
+            Площадь прямоугольника равна 
+            <input type="number" name="res" size="15">
+        </div>
+    </form>
+    <script>
+        document.title="Расчет площади прямоугольного треугольника"
+        function areaRectangle() {
+            var a=document.forma1.t1.value;
+            var b=document.forma1.t2.value;
+            var c=2;
+            var s=a*b/c;
+            document.forma1.res.value=s
+        }
+    </script>
+</body>
+</html>
